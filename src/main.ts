@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 import editorPlugin from "./plugins/editor";
-import LightEditor from "@hannanmiah/light-editor"
+import LightEditor from "@hannanmiah/light-editor";
 
 import App from "./App.vue";
 import router from "./router";
