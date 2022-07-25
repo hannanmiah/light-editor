@@ -1,6 +1,6 @@
 {
   "name": "@hannanmiah/light-editor",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [

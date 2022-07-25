@@ -4,14 +4,21 @@ const content = ref("");
 </script>
 <template>
   <div class="about">
-    <light-editor v-model="content" />
+    <div class="grid grid-cols-2 gap-2 md:gap-4">
+      <light-editor v-model="content" />
+      <light-editor v-model="content" />
+      <light-editor v-model="content" />
+      <light-editor v-model="content" />
+      <light-editor v-model="content" />
+      <light-editor v-model="content" />
+    </div>
     <div class="prose lg:prose-xl" v-html="content"></div>
   </div>
 </template>
 
 <style scoped>
 .about {
-  @apply flex flex-col space-y-4 md:space-y-4 border rounded-md;
+  @apply flex flex-col space-y-4 md:space-y-4;
 }
 
 .is-active {

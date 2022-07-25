@@ -11,6 +11,6 @@ const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
-app.use(LightEditor);
+app.use(editorPlugin);
 
 app.mount("#app");

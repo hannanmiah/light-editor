@@ -27,8 +27,7 @@ const editor = useEditor({
   extensions: [StarterKit, Underline, TextStyle, Color, Link, Image],
   editorProps: {
     attributes: {
-      class:
-        "prose prose-sm sm:prose lg:prose-lg xl:prose-2xl m-5 focus:outline-none",
+      class: "prose sm:prose-xl md:prose-2xl p-2 md:p-4 focus:outline-none",
     },
   },
 });
@@ -72,11 +71,15 @@ function addImage() {
   }
 }
 </script>
+<script lang="ts">
+export default {
+  inheritAttrs: false,
+};
+</script>
 <template>
-  <div class="about">
+  <div v-if="editor" class="flex flex-col border rounded-md">
     <div
-      v-if="editor"
-      class="flex items-center space-x-2 md:space-x-4 p-2 border-b"
+      class="flex flex-wrap items-center space-x-2 md:space-x-4 p-2 border-b"
     >
       <button
         @click="editor.chain().focus().toggleBold().run()"
@@ -201,24 +204,20 @@ function addImage() {
       />
     </div>
 
-    <editor-content :editor="editor" />
+    <editor-content :editor="editor" v-bind="$attrs" />
   </div>
 </template>
 
 <style scoped>
-.about {
-  @apply flex flex-col space-y-4 md:space-y-4 border rounded-md;
-}
-
-.is-active {
-  @apply bg-indigo-500 text-white;
-}
-
 .icon {
-  @apply w-4 h-4;
+  @apply w-2 h-2 md:w-4 md:h-4;
 }
 
 .editor-btn {
   @apply bg-gray-200 p-2 rounded-md text-gray-700 hover:bg-gray-300 duration-300;
+}
+
+.is-active {
+  @apply bg-indigo-500 text-white fill-white;
 }
 </style>
