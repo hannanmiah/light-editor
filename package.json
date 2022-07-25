@@ -13,7 +13,7 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "version": "0.0.6",
+  "version": "0.0.11",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -24,7 +24,6 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@hannanmiah/light-editor": "file:hannanmiah-light-editor-0.0.6.tgz",
     "@tiptap/extension-bubble-menu": "^2.0.0-beta.61",
     "@tiptap/extension-bullet-list": "^2.0.0-beta.29",
     "@tiptap/extension-color": "^2.0.0-beta.12",

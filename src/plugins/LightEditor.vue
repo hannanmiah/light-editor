@@ -7,6 +7,7 @@ import TextStyle from "@tiptap/extension-text-style";
 import Link from "@tiptap/extension-link";
 import Image from "@tiptap/extension-image";
 import StarterKit from "@tiptap/starter-kit";
+// import "./plugin.css";
 
 const props = defineProps<{
   modelValue: string;
@@ -27,7 +28,7 @@ const editor = useEditor({
   extensions: [StarterKit, Underline, TextStyle, Color, Link, Image],
   editorProps: {
     attributes: {
-      class: "prose sm:prose-xl md:prose-2xl p-2 md:p-4 focus:outline-none",
+      class: "editor-default",
     },
   },
 });
@@ -71,16 +72,9 @@ function addImage() {
   }
 }
 </script>
-<script lang="ts">
-export default {
-  inheritAttrs: false,
-};
-</script>
 <template>
-  <div v-if="editor" class="flex flex-col border rounded-md">
-    <div
-      class="flex flex-wrap items-center space-x-2 md:space-x-4 p-2 border-b"
-    >
+  <div v-if="editor" class="editor-container">
+    <div class="editor-toolbox">
       <button
         @click="editor.chain().focus().toggleBold().run()"
         :class="{ 'is-active': editor.isActive('bold') }"
@@ -204,20 +198,15 @@ export default {
       />
     </div>
 
-    <editor-content :editor="editor" v-bind="$attrs" />
+    <editor-content :editor="editor" />
   </div>
 </template>
 
 <style scoped>
-.icon {
-  @apply w-2 h-2 md:w-4 md:h-4;
-}
-
-.editor-btn {
-  @apply bg-gray-200 p-2 rounded-md text-gray-700 hover:bg-gray-300 duration-300;
-}
-
-.is-active {
-  @apply bg-indigo-500 text-white fill-white;
+@import "./plugin.css";
+</style>
+<style>
+.editor-default {
+  @apply w-full prose prose-sm sm:prose-xl md:prose-2xl px-2 md:px-4 focus:outline-none;
 }
 </style>
