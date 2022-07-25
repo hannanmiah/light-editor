@@ -3,7 +3,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 export default [
   {
-    input: "src/plugins/editor.ts",
+    input: "src/plugins/editor.js",
     output: [
       {
         format: "esm",
@@ -12,6 +12,10 @@ export default [
       {
         format: "cjs",
         file: "dist/library.js",
+      },
+      {
+        format: "vue",
+        file: "dist/library.vue",
       },
     ],
     plugins: [vue(), peerDepsExternal()],

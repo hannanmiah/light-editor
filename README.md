@@ -8,17 +8,20 @@
 npm install @hannanmiah/light-editor
 ```
 
-### Using as a plugin
+### Using as a plugin or Component
 
 ```
 //main.js
 import { createApp } from "vue";
-import LightEditor from "@hannanmiah/light-editor"
+import { LightEditor, LightEditorPlugin } from "@hannanmiah/light-editor"
 
 import App from "./App.vue";
 
 const app = createApp(App);
-app.use(LightEditor);
+//use as a plugin
+app.use(LightEditorPlugin);
+//or use as a global component
+app.component(LightEditor)
 app.mount("#app");
 ```
 

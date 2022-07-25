@@ -1,14 +1,20 @@
 {
   "name": "@hannanmiah/light-editor",
-  "version": "0.0.3",
-  "main": "dist/library.js",
-  "module": "dist/library.mjs",
   "files": [
-    "dist/*"
+    "dist"
   ],
+  "main": "./dist/light-editor.umd.js",
+  "module": "./dist/light-editor.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/light-editor.es.js",
+      "require": "./dist/light-editor.umd.js"
+    }
+  },
+  "version": "0.0.5",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check build-only",
+    "build": "vite build",
     "rollup": "rollup -c",
     "preview": "vite preview --port 4173",
     "build-only": "vite build",
@@ -16,7 +22,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@hannanmiah/light-editor": "^0.0.1",
+    "@hannanmiah/light-editor": "^0.0.4",
     "@tiptap/extension-bubble-menu": "^2.0.0-beta.61",
     "@tiptap/extension-bullet-list": "^2.0.0-beta.29",
     "@tiptap/extension-color": "^2.0.0-beta.12",
