@@ -1,13 +1,12 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-import editorPlugin from "./plugins/editor";
-import { LightEditor, LightEditorPlugin } from "../dist/light-editor.es";
+
+import { LightEditor, LightEditorPlugin } from "@hannanmiah/light-editor";
 
 import App from "./App.vue";
 import router from "./router";
 import "./main.css";
-import "../dist/style.css";
-
+import "@hannanmiah/light-editor/dist/style.css";
 const app = createApp(App);
 app.component("light-editor", LightEditor);
 console.log(LightEditor);

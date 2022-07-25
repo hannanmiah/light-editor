@@ -16,6 +16,7 @@ import { createApp } from "vue";
 import { LightEditor, LightEditorPlugin } from "@hannanmiah/light-editor"
 
 import App from "./App.vue";
+import "@hannanmiah/light-editor/style.css"
 
 const app = createApp(App);
 //use as a plugin
