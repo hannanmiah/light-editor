@@ -8,11 +8,11 @@
   }
 
   .editor-btn {
-    @apply bg-gray-200 p-2 rounded-md text-gray-700 hover:bg-gray-300 duration-300;
+    @apply p-2 rounded-md text-gray-700 hover:bg-gray-300 duration-300;
   }
 
   .is-active {
-    @apply bg-indigo-500 text-white fill-white;
+    @apply bg-gray-700 text-white fill-white;
   }
 
   .editor-container {
