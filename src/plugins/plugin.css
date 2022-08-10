@@ -21,4 +21,61 @@
   .editor-toolbox {
     @apply flex flex-wrap items-center space-x-2 md:space-x-4 p-2 border-b;
   }
+
+  .header-div {
+    @apply relative flex flex-col justify-center items-center;
+  }
+  .parent-header {
+    @apply absolute top-8 left-0 z-10 flex space-x-1 md:space-x-2;
+  }
+  .list-header {
+    @apply bg-white px-2 py-1 text-sm text-gray-600 border rounded-sm hover:bg-gray-100 hover:text-gray-900 cursor-pointer;
+  }
+
+  .is-h-active {
+    @apply bg-gray-700 text-white;
+  }
+
+  .modal-container {
+    @apply grid place-content-center w-screen h-screen fixed top-0 right-0 bottom-0 left-0 bg-black/[0.3] p-4 md:p-8;
+  }
+
+  .modal {
+    @apply bg-white w-full rounded-md md:rounded-xl flex flex-col gap-2 md:gap-4 items-center justify-center;
+  }
+
+  .modal-header {
+    @apply p-2 md:p-4;
+  }
+
+  .modal-body {
+    @apply p-2 md:p-4 flex flex-col gap-2 md:gap-4;
+  }
+
+  .modal-footer {
+    @apply p-2 md:p-4 flex justify-center items-center gap-2 md:gap-4;
+  }
+  .btn {
+    @apply p-2 md:p-4 rounded-md;
+  }
+
+  .btn-warning {
+    @apply bg-yellow-500 text-white;
+  }
+
+  .btn-info {
+    @apply bg-blue-500 text-white;
+  }
+
+  .btn-success {
+    @apply bg-green-500 text-white;
+  }
+
+  .form-group {
+    @apply flex flex-col;
+  }
+
+  .form-control {
+    @apply border border-gray-300 rounded-md;
+  }
 }

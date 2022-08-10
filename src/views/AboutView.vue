@@ -5,7 +5,7 @@ const content = ref("");
 <template>
   <div class="about">
     <div class="">
-      <light-editor v-model="content" />
+      <light-editor classic v-model="content" />
     </div>
     <div class="prose lg:prose-xl" v-html="content"></div>
   </div>

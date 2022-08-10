@@ -14,7 +14,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/plugins/index.js"),
+      entry: path.resolve(__dirname, "src/plugins/index.ts"),
       name: "LightEditor",
       fileName: (format) => `light-editor.${format}.js`,
     },
