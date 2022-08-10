@@ -7,6 +7,7 @@ defineProps<{
 
 <template>
   <button
+    type="button"
     @click="editor.chain().focus().toggleBulletList().run()"
     :class="{ 'is-active': editor.isActive('bulletList') }"
     class="editor-btn"

@@ -46,7 +46,8 @@ function setLink() {
 
 <template>
   <button
-    @click="setLink"
+    type="button"
+    @click="toggleDialog"
     :class="{ 'is-active': editor.isActive('link') }"
     class="editor-btn"
   >
@@ -70,8 +71,12 @@ function setLink() {
         </div>
       </template>
       <template #footer>
-        <button @click="toggleDialog" class="btn btn-warning">Cancel</button>
-        <button @click="setLink" class="btn btn-info">Insert</button>
+        <button type="button" @click="toggleDialog" class="btn btn-warning">
+          Cancel
+        </button>
+        <button type="button" @click="setLink" class="btn btn-info">
+          Insert
+        </button>
       </template>
     </BaseDialog>
   </button>

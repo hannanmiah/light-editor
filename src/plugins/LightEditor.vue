@@ -37,17 +37,6 @@ function renderCondition(component: Component) {
     return false;
   }
 }
-// const renderCondition = computed((component: Component) {
-//   if (component.type === "advanced" && advanced.value) {
-//     return true;
-//   } else if (component.type === "classic" && classic.value) {
-//     return true;
-//   } else if (component.type === "basic" && basic.value) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// })
 
 const fileteredComponents = computed(() => {
   return components.filter(renderCondition);
@@ -93,12 +82,6 @@ watch(content, (value) => {
 </style>
 <style>
 .editor-default {
-  @apply w-full prose prose-sm sm:prose-xl md:prose-2xl px-2 md:px-4 focus:outline-none;
-}
-.editor-container {
-  @apply flex flex-col border rounded-md;
-}
-.editor-toolbox {
-  @apply flex flex-wrap items-center space-x-2 md:space-x-4 p-2 border-b;
+  @apply w-full prose-h1:text-6xl prose-h2:text-5xl prose-h3:text-4xl p-2 md:p-4 focus:outline-none;
 }
 </style>

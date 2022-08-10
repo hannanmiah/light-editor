@@ -7,6 +7,7 @@ defineProps<{
 
 <template>
   <button
+    type="button"
     @click="editor.chain().focus().toggleUnderline().run()"
     :class="{ 'is-active': editor.isActive('underline') }"
     class="editor-btn"

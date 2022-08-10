@@ -7,6 +7,7 @@ defineProps<{
 
 <template>
   <button
+    type="button"
     @click="editor.chain().focus().toggleBold().run()"
     :class="{ 'is-active': editor.isActive('bold') }"
     class="editor-btn"

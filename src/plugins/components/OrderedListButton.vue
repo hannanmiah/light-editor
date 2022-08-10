@@ -7,6 +7,7 @@ defineProps<{
 
 <template>
   <button
+    type="button"
     @click="editor.chain().focus().toggleOrderedList().run()"
     :class="{ 'is-active': editor.isActive('orderedList') }"
     class="editor-btn"

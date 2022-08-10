@@ -7,6 +7,7 @@ defineProps<{
 
 <template>
   <button
+    type="button"
     @click="editor.chain().focus().toggleItalic().run()"
     :class="{ 'is-active': editor.isActive('italic') }"
     class="editor-btn"
