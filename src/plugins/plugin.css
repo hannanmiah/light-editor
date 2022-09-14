@@ -16,10 +16,10 @@
   }
 
   .editor-container {
-    @apply flex flex-col border rounded-md;
+    @apply flex flex-col border dark:border-slate-500 rounded-md;
   }
   .editor-toolbox {
-    @apply flex flex-wrap items-center space-x-2 md:space-x-4 p-2 border-b;
+    @apply flex flex-wrap items-center space-x-2 md:space-x-4 p-2 border-b dark:border-slate-500;
   }
 
   .header-div {

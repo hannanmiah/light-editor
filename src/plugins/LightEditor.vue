@@ -82,6 +82,6 @@ watch(content, (value) => {
 </style>
 <style>
 .editor-default {
-  @apply w-full prose-h1:text-6xl prose-h2:text-5xl prose-h3:text-4xl p-2 md:p-4 focus:outline-none;
+  @apply w-full prose prose-stone px-2 md:px-4 focus:outline-none dark:prose-invert;
 }
 </style>
