@@ -51,7 +51,8 @@ const editor: ShallowRef<Editor | undefined> = useEditor({
   extensions: [StarterKit, Underline, TextStyle, Color, Link, Image],
   editorProps: {
     attributes: {
-      class: "editor-default",
+      class:
+        "w-full prose sm:prose prose-stone p-2 md:p-4 dark:prose-invert focus:outline-none",
     },
   },
 });
@@ -78,10 +79,5 @@ watch(content, (value) => {
 </template>
 
 <style scoped>
-@import "./plugin.css";
-</style>
-<style>
-.editor-default {
-  @apply w-full prose prose-stone px-2 md:px-4 focus:outline-none dark:prose-invert;
-}
+/* @import "./plugin.css"; */
 </style>

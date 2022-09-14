@@ -17,5 +17,5 @@
 </template>
 
 <style scoped>
-@import "../../plugin.css";
+/* @import "../../plugin.css"; */
 </style>
