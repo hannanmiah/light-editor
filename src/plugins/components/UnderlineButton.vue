@@ -20,6 +20,4 @@ defineProps<{
   </button>
 </template>
 
-<style scoped>
-/* @import "../plugin.css"; */
-</style>
+<style scoped></style>

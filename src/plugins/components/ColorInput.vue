@@ -17,5 +17,4 @@ const color = ref("#000000");
 </template>
 
 <style scoped>
-/* @import "../plugin.css"; */
 </style>

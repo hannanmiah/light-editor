@@ -13,7 +13,7 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "version": "0.0.15",
+  "version": "0.0.17",
   "license": "MIT",
   "scripts": {
     "dev": "vite",

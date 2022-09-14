@@ -6,6 +6,7 @@
   .editor-default {
     @apply w-full prose prose-stone px-2 md:px-4 focus:outline-none dark:prose-invert;
   }
+  
   .icon {
     @apply w-2 h-2 md:w-4 md:h-4;
   }

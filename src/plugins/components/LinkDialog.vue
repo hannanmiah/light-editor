@@ -83,5 +83,4 @@ function setLink() {
 </template>
 
 <style scoped>
-/* @import "../plugin.css"; */
 </style>

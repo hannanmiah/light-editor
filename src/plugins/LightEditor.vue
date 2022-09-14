@@ -11,7 +11,6 @@ import Image from "@tiptap/extension-image";
 import StarterKit from "@tiptap/starter-kit";
 import components from "./components";
 import type { Component } from "./components";
-// import "./plugin.css";
 
 const props = defineProps<{
   modelValue: string;
@@ -78,6 +77,4 @@ watch(content, (value) => {
   </div>
 </template>
 
-<style scoped>
-/* @import "./plugin.css"; */
-</style>
+<style scoped></style>
