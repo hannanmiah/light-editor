@@ -2,84 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .editor-default {
-    @apply w-full prose prose-stone px-2 md:px-4 focus:outline-none dark:prose-invert;
-  }
-  
-  .icon {
-    @apply w-2 h-2 md:w-4 md:h-4;
-  }
+.editor-default {
+  @apply w-full prose prose-stone px-2 md:px-4 focus:outline-none dark:prose-invert;
+}
+.editor-container {
+  @apply flex flex-col border dark:border-slate-500 rounded-md overflow-hidden;
+}
+.editor-toolbox {
+  @apply flex flex-wrap items-center space-x-2 md:space-x-4 p-2 border-b bg-gray-300 dark:bg-slate-500 dark:border-slate-500;
+}
+.icon {
+  @apply w-2 h-2 md:w-4 md:h-4;
+}
 
-  .editor-btn {
-    @apply p-2 rounded-md text-gray-700 hover:bg-gray-300 duration-300;
-  }
+.editor-btn {
+  @apply p-2 rounded-md text-gray-700 hover:bg-white dark:hover:bg-gray-300 duration-300;
+}
 
-  .is-active {
-    @apply bg-gray-700 text-white fill-white;
-  }
+.is-active {
+  @apply bg-gray-700 text-white fill-white;
+}
 
-  .editor-container {
-    @apply flex flex-col border dark:border-slate-500 rounded-md;
-  }
-  .editor-toolbox {
-    @apply flex flex-wrap items-center space-x-2 md:space-x-4 p-2 border-b dark:border-slate-500;
-  }
+.header-div {
+  @apply relative flex flex-col justify-center items-center;
+}
 
-  .header-div {
-    @apply relative flex flex-col justify-center items-center;
-  }
-  .parent-header {
-    @apply absolute top-8 left-0 z-10 flex space-x-1 md:space-x-2;
-  }
-  .list-header {
-    @apply bg-white px-2 py-1 text-sm text-gray-600 border rounded-sm hover:bg-gray-100 hover:text-gray-900 cursor-pointer;
-  }
+.parent-header {
+  @apply absolute top-8 left-0 z-10 flex space-x-1 md:space-x-2;
+}
+.list-header {
+  @apply bg-white px-2 py-1 text-sm text-gray-600 border rounded-sm hover:bg-gray-100 hover:text-gray-900 cursor-pointer;
+}
 
-  .is-h-active {
-    @apply bg-gray-700 text-white;
-  }
+.is-h-active {
+  @apply bg-gray-700 text-white;
+}
 
-  .modal-container {
-    @apply grid place-content-center w-screen h-screen fixed top-0 right-0 bottom-0 left-0 bg-black/[0.3] p-4 md:p-8;
-  }
+.modal-container {
+  @apply grid place-content-center w-screen h-screen fixed top-0 right-0 bottom-0 left-0 bg-black/[0.3] p-4 md:p-8;
+}
 
-  .modal {
-    @apply bg-white w-full rounded-md md:rounded-xl flex flex-col gap-2 md:gap-4 items-center justify-center;
-  }
+.modal {
+  @apply bg-white w-full rounded-md md:rounded-xl flex flex-col gap-2 md:gap-4 items-center justify-center;
+}
 
-  .modal-header {
-    @apply p-2 md:p-4;
-  }
+.modal-header {
+  @apply p-2 md:p-4;
+}
 
-  .modal-body {
-    @apply p-2 md:p-4 flex flex-col gap-2 md:gap-4;
-  }
+.modal-body {
+  @apply p-2 md:p-4 flex flex-col gap-2 md:gap-4;
+}
 
-  .modal-footer {
-    @apply p-2 md:p-4 flex justify-center items-center gap-2 md:gap-4;
-  }
-  .btn {
-    @apply p-2 md:p-4 rounded-md;
-  }
+.modal-footer {
+  @apply p-2 md:p-4 flex justify-center items-center gap-2 md:gap-4;
+}
 
-  .btn-warning {
-    @apply bg-yellow-500 text-white;
-  }
+.btn {
+  @apply p-2 md:p-4 rounded-md;
+}
 
-  .btn-info {
-    @apply bg-blue-500 text-white;
-  }
+.btn-warning {
+  @apply bg-yellow-500 text-white;
+}
 
-  .btn-success {
-    @apply bg-green-500 text-white;
-  }
+.btn-info {
+  @apply bg-blue-500 text-white;
+}
 
-  .form-group {
-    @apply flex flex-col;
-  }
+.btn-success {
+  @apply bg-green-500 text-white;
+}
 
-  .form-control {
-    @apply border border-gray-300 rounded-md;
-  }
+.form-group {
+  @apply flex flex-col;
+}
+
+.form-control {
+  @apply border border-gray-300 rounded-md;
 }

@@ -51,7 +51,7 @@ const editor: ShallowRef<Editor | undefined> = useEditor({
   editorProps: {
     attributes: {
       class:
-        "w-full prose sm:prose prose-stone p-2 md:p-4 dark:prose-invert focus:outline-none",
+        "w-full prose prose-stone p-2 md:p-4 dark:prose-invert focus:outline-none",
     },
   },
 });
